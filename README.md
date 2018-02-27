@@ -17,9 +17,9 @@ GUILY Florian
 MATHEU Edouard
 OUERTATANI Mohamed Achref
 
-Le virus peux toucher un ordinntateur comment? Le virus informatique affecte de la meme facon que un virus biologique affecte le corps. en effet il existe 3 type de virus . Virus classique qui se replique dans un environement informatique vise a endommager le systeme en se comportant comme des bout de code inutiles qui vient s'implanter dans programme pour l'endommager.
-Le ver informatique par contre agit et se repand dans un reseaux de machines , il est moins offensif et il sert plutot a l'espionnage et le vol d'information. Finalement , le cheval de troie qui est plutôt une platefomre qui delivre un virus ou un verre; on donne l'exemple des jeux telechargeable en ligne , ces jeux peuvent comporter le virus et a chaque fois qu'on joue le virus se propage encore plus. 
-Le virus informatique peux détruire des fichier ralentir les serveur et les réseaux ,donner un acces facile a l'espionneur grâce au backdoor.
+Le virus peux toucher un ordinateur comment? Le virus informatique affecte de la même facon que un virus biologique affecte le corps. En effet, il existe 3 types de virus. Virus classique qui se réplique dans un environnement informatique vise a endommager le systeme en se comportant comme des bouts de code inutiles qui viennent s'implanter dans le programme pour l'endommager.
+Le ver informatique par contre agit et se répand dans un réseaux de machines , il est moins offensif et il sert plutot a l'espionnage et le vol d'information. Finalement, le cheval de troie qui est plutôt une plateforme qui délivre un virus ou un ver; on donne l'exemple des jeux telechargeables en ligne, ces jeux peuvent comporter le virus et à chaque fois qu'on joue le virus se propage encore plus. 
+Le virus informatique peux détruire des fichiers ralentir les serveurs et les réseaux, donner un accès facile à l'espionneur grâce au backdoor.
 
 Objectifs:
 - Faire une modélisation graphique de la propagation d'un virus.
