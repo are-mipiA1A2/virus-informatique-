@@ -47,7 +47,7 @@ Le parc informatique ainsi que le niveau de protection sont en constante augment
 
 premières idées de modélisation : 
 
-VOIR FICHIER ARE.IPYNB
+# VOIR FICHIER ARE.IPYNB
 
 
 
