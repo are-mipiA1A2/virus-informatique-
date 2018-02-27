@@ -1,4 +1,4 @@
-# virus-informatique- chachou edou avec un x à la fin belette flo
+# virus-informatique-
 Modélisation de la propagation d'un virus informatique au sein d'un ensemble d'ordinateurs et de serveurs reliés en réseau interne et publique.
 Les paramètres seront entre autres:
 
@@ -37,10 +37,10 @@ Questions importantes autour du sujet:
 Phénomène principal étudié:
 Le phénomène principal étudié est la propagation d'un virus informatique un réseau.
 
-Agents : 3 agents
-Interaction : Aléatoire
-Dynamique : Propagation
-Variables : temps , anti-virus , type de virus , nombre d'agents , nombre de nœuds ( serveurs ) , manière de transmission , détectabilité du virus.
+- Agents : 3 agents
+- Interaction : Aléatoire
+- Dynamique : Propagation
+- Variables : temps , anti-virus , type de virus , nombre d'agents , nombre de nœuds ( serveurs ) , manière de transmission , détectabilité du virus.
 
 Méthode de validation :
 Le parc informatique ainsi que le niveau de protection sont en constante augmentation. Les chiffres concernants le nombre d'infecté n'est donc pas le même en fonction des années. Nous allons donc nous appuyer sur les chiffres d'inféctions de chaque année et sur le nombre d'utilisateur par année afin de validerle modèle.
