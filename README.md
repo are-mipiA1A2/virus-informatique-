@@ -12,10 +12,10 @@ Cahier des charges ARE DYNAMIC
                                                   Le virus informatique
                                                   
                                                   
-BAILLY Antoine
-GUILY Florian
-MATHEU Edouard
-OUERTATANI Mohamed Achref
+- BAILLY Antoine
+- GUILY Florian
+- MATHEU Edouard
+- OUERTATANI Mohamed Achref
 
 Le virus peux toucher un ordinateur comment? Le virus informatique affecte de la même facon que un virus biologique affecte le corps. En effet, il existe 3 types de virus. Virus classique qui se réplique dans un environnement informatique vise a endommager le systeme en se comportant comme des bouts de code inutiles qui viennent s'implanter dans le programme pour l'endommager.
 Le ver informatique par contre agit et se répand dans un réseaux de machines , il est moins offensif et il sert plutot a l'espionnage et le vol d'information. Finalement, le cheval de troie qui est plutôt une plateforme qui délivre un virus ou un ver; on donne l'exemple des jeux telechargeables en ligne, ces jeux peuvent comporter le virus et à chaque fois qu'on joue le virus se propage encore plus. 
