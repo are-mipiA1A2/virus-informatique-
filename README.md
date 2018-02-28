@@ -42,11 +42,10 @@ Le phénomène principal étudié est la propagation d'un virus informatique un 
 - Agents : 3 types d'agents : PC , Serveurs , Virus
 - Interaction : Aléatoire
 - Dynamique : Propagation
-- Variables : VARIABLES GLOBALES : temps, connexion inter-PC
-              - PC ( Infection, Antivirus , (???)) 
-              - Serveurs ( Nombre, Type de serveurs, Probabilité d'infection à partir de ce serveur ) 
-              - Virus ( Type de virus, Manière de transmission, Détectabilité )
-
+- Variables : VARIABLES GLOBALES : temps, connexion inter-PC, Virus ( Type de virus, Manière de transmission, Détectabilité )
+             - - PC ( Infection ,Taux de protection , Taux de désinfection, (???)) 
+             - - Serveurs ( Nombre, Type de serveurs, Probabilité d'infection à partir de ce serveur ) 
+              
 
 Méthode de validation:
 - Le parc informatique ainsi que le niveau de protection sont en constante augmentation. Les chiffres concernants le nombre d'infecté n'est donc pas le même en fonction des années. Nous allons donc nous appuyer sur les chiffres d'inféctions de chaque année et sur le nombre d'utilisateur par année afin de validerle modèle.
