@@ -28,4 +28,13 @@ def init_matrice():
     
     return mat
 
+def reseau(N):
+    ''' Le dictionnaire qui indique l'infection, la taux de protection , le temps de désinfection'''
+    Reseau = dict()
+    infection = False   
+    for i in range(0,N):
+            protection = np.random.choice(10)
+            Tdesinfection = 10 - protection
+            Reseau[i] = [infection, protection, Tdesinfection]
+    return Reseau
 
