@@ -17,9 +17,11 @@ Cahier des charges ARE DYNAMIC
 - MATHEU Edouard
 - OUERTATANI Mohamed Achref
 
-Le virus peux toucher un ordinateur comment? Le virus informatique affecte de la même facon que un virus biologique affecte le corps. En effet, il existe 3 types de virus. Virus classique qui se réplique dans un environnement informatique vise a endommager le systeme en se comportant comme des bouts de code inutiles qui viennent s'implanter dans le programme pour l'endommager.
-Le ver informatique par contre agit et se répand dans un réseaux de machines , il est moins offensif et il sert plutot a l'espionnage et le vol d'information. Finalement, le cheval de troie qui est plutôt une plateforme qui délivre un virus ou un ver; on donne l'exemple des jeux telechargeables en ligne, ces jeux peuvent comporter le virus et à chaque fois qu'on joue le virus se propage encore plus. 
-Le virus informatique peux détruire des fichiers ralentir les serveurs et les réseaux, donner un accès facile à l'espionneur grâce au backdoor.
+Comment le virus peut-il toucher un ordinateur? Le virus informatique affecte de la même facon qu'un virus biologique affecte un corps. En effet, il existe 3 types de virus:
+- Le virus classique qui se réplique dans un environnement informatique vise a endommager le systeme en se comportant comme des bouts de code inutiles qui viennent s'implanter dans le programme pour l'endommager.
+- Le ver informatique par contre agit et se répand dans un réseaux de machines , il est moins offensif et il sert plutôt à l'espionnage et le vol d'information.
+- Le cheval de Troie qui est plutôt une plateforme qui délivre un virus ou un ver; on donne l'exemple des jeux telechargeables en ligne, ces jeux peuvent contenir le virus et à chaque fois qu'on joue, le virus se propage encore plus. 
+Le virus informatique peux détruire des fichiers, ralentir les serveurs et les réseaux, donner un accès facile à l'espion grâce au backdoor.
 
 Objectifs:
 - Faire une modélisation graphique de la propagation d'un virus.
@@ -37,10 +39,14 @@ Questions importantes autour du sujet:
 Phénomène principal étudié:
 Le phénomène principal étudié est la propagation d'un virus informatique un réseau.
 
-- Agents : 3 agents
+- Agents : 3 types d'agents : PC , Serveurs , Virus
 - Interaction : Aléatoire
 - Dynamique : Propagation
-- Variables : temps , anti-virus , type de virus , nombre d'agents , nombre de nœuds ( serveurs ) , manière de transmission , détectabilité du virus.
+- Variables : VARIABLES GLOBALES : temps, connexion inter-PC
+              - PC ( Infection, Antivirus , (???)) 
+              - Serveurs ( Nombre, Type de serveurs, Probabilité d'infection à partir de ce serveur ) 
+              - Virus ( Type de virus, Manière de transmission, Détectabilité )
+
 
 Méthode de validation :
 Le parc informatique ainsi que le niveau de protection sont en constante augmentation. Les chiffres concernants le nombre d'infecté n'est donc pas le même en fonction des années. Nous allons donc nous appuyer sur les chiffres d'inféctions de chaque année et sur le nombre d'utilisateur par année afin de validerle modèle.
