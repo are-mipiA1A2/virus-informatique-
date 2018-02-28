@@ -48,10 +48,10 @@ Le phénomène principal étudié est la propagation d'un virus informatique un 
               - Virus ( Type de virus, Manière de transmission, Détectabilité )
 
 
-Méthode de validation :
+Méthode de validation:
 Le parc informatique ainsi que le niveau de protection sont en constante augmentation. Les chiffres concernants le nombre d'infecté n'est donc pas le même en fonction des années. Nous allons donc nous appuyer sur les chiffres d'inféctions de chaque année et sur le nombre d'utilisateur par année afin de validerle modèle.
 
-premières idées de modélisation : 
+Premières idées de modélisation: 
 
 # VOIR FICHIER ARE.IPYNB
 
