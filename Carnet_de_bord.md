@@ -11,7 +11,7 @@ d'internautes infectés par un virus )**
 infecté**
 
 **Discussion du modèle sur papier: choix ( provisoire ? ) des variables, du moyen de propagation ( mode d'action ) :**
- -VARIABLE GLOBALE : temps ( date de mise en ligne )(int) , connexion inter-PC (bool ?), virus (tupl)
- -PC ( infection (bool (> float pour ajouter " vaccins " ?)) , Taux de protection ( float ) , Taux de désinfection ( float )
- -Serveurs ( nombre )
+ - VARIABLE GLOBALE : temps ( date de mise en ligne )(int) , connexion inter-PC (bool ?), virus (tupl)
+ - PC ( infection (bool (> float pour ajouter " vaccins " ?)) , Taux de protection ( float ) , Taux de désinfection ( float )
+ - Serveurs ( nombre )
 
