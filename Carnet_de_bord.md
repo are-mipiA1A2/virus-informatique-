@@ -3,7 +3,7 @@
 ** Recherche documentaires sur le nombres d'internautes depuis 1995 ( et recherche non aboutie de la proportion 
 d'internautes infectés par un virus ) **
 
-**Modèle de base, fonction de base ( création du réseau ) en 2 parties: **
+** Modèle de base, fonction de base ( création du réseau ) en 2 parties: **
  - créer les liaisons de chaque utilisateurs 
  - créer les caractères de chaque utilisateurs 
 
