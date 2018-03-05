@@ -1,6 +1,6 @@
 # CARNET DE BORD
 
-##Mercredi 28 février 2018 
+## Mercredi 28 février 2018 
 
 **Recherche documentaires sur le nombres d'internautes depuis 1995 ( et recherche non aboutie de la proportion 
 d'internautes infectés par un virus )**
