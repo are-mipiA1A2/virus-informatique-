@@ -1,6 +1,6 @@
 # CARNET DE BORD
 
-## Mercredi 28 février 2018 
+## Mercredi 28 Février 2018 
 
 **Recherche documentaires sur le nombres d'internautes depuis 1995 ( et recherche non aboutie de la proportion 
 d'internautes infectés par un virus )**
@@ -17,3 +17,4 @@ infecté**
  - PC ( infection (bool (> float pour ajouter " vaccins " ?)) , Taux de protection ( float ) , Taux de désinfection ( float )
  - Serveurs ( nombre )
 
+## Mercredi 7 Mars 2018
