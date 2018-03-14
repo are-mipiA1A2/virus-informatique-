@@ -35,4 +35,4 @@ infecté**
 - créer un dict avec ( serveurs : Google , jeux ...   ) 
 - associer la connexion ( ensemble ) à la population
 
-# Relier les serveurs entre eux
+#### Objectifs mercredi 21 Mars 2018 : Relier les serveurs entre eux
