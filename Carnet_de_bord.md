@@ -24,3 +24,15 @@ infecté**
 **Chercher une bibliothèque qui permet de modéliser un réseau, => Network X : entrainement sur la bibliothèque afin de comprendre son fonctionnement**
 
 **Création d'une fonction qui permet de créer la population ( de base ), organisation en réseau, nombre de serveurs et nombre de personnes connectées au serveur. Differenciation serveurs locaux ou globaux en fonction de la taille ( tout est généré aléatoirement)**
+
+## Mercredi 14 Mars 2018 
+
+2 groupes de travail:
+
+**Manipulation de la bibliothèque Network X et début de modélisation du réseau à partir du code du 1er groupe ( création des noeuds avec des valeurs d'infection , un taux de désinfection et de protection ) et affichage des noeuds**
+
+**Nouvelle idée: créer manuellement les serveurs globaux pour simplifier la tache :** 
+- créer un dict avec ( serveurs : Google , jeux ...   ) 
+- associer la connexion ( ensemble ) à la population
+
+# Relier les serveurs entre eux
