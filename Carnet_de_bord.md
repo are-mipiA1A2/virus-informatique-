@@ -18,3 +18,9 @@ infecté**
  - Serveurs ( nombre )
 
 ## Mercredi 7 Mars 2018
+
+2 groupes de travail:
+
+**Chercher une bibliothèque qui permet de modéliser un réseau, => Network X : entrainement sur la bibliothèque afin de comprendre son fonctionnement**
+
+**Création d'une fonction qui permet de créer la population ( de base ), organisation en réseau, nombre de serveurs et nombre de personnes connectées au serveur. Differenciation serveurs locaux ou globaux en fonction de la taille ( tout est généré aléatoirement)**
