@@ -22,7 +22,15 @@ virus = (0.5, 0.0, 0.0, 0.0)
 #seuilg : seuil pour qu'un serveur souche soit considéré global
 global sg
 sg = 50
-
+#POP : population totale : dict[int : list[bool, float, float, set[str], set[int]
+global POP
+POP = population()
+#POP_adresses : liste des adresses de POP : list[int]
+global POP_adresses
+POP_adresses = list(POP.keys())
+#internet : ensemble des réseaux (locaux et globaux) : dict[str:list[set[int], str, bool]]
+global internet
+internet = type_serv()
 
 
 def population():
@@ -38,12 +46,7 @@ def population():
         pop[i] = [infection, protection, Tdesinfection, serveurs, connections]
     return pop
 
-#POP : population totale : dict[int : list[bool, float, float, set[str], set[int]
-global POP
-POP = population()
-#POP_adresses : liste des adresses de POP : list[int]
-global POP_adresses
-POP_adresses = list(POP.keys())
+
 def serv_souche():
     """ Le dictionnaire représentant l'ensemble des serveurs, de la forme : adresse : [Nconnections]"""
     D_serv = dict()
@@ -54,7 +57,10 @@ def serv_souche():
     return D_serv
 
 def connections():
-    """Attribue un ensemble de personnes connectées au serveur à chaque serveur"""
+    """
+    Attribue un ensemble de personnes connectées au serveur à chaque serveur
+    Nonetype -> dict[str:set[int]]
+    """
     DR = dict()
     #Dss : dictionaire des serveurs souche : dict[str:int]
     Dss = serv_souche()
@@ -67,11 +73,28 @@ def connections():
             Ea.add(rd.choice(POP_adresses))
             n -= 1
         DR[serv] = Ea
+        
     return DR
 
 def type_serv():
-    """"""
-    return None
+    
+    
+    serv = connections()
+    for a in serv:
+        if len(serv[a])>= sg:
+            serv[a]=[serv[a], 'serveur_global', False]
+        if len(serv[a])<= sg:
+            serv[a]=[serv[a], 'serveur_local', False]          
+    return serv
+
+
+def propagation():
+    #i : internet : dict[str:list[set[int], str, bool]]
+    i = internet
+    
+    
+    
+    
     
     
 #connexction de d_serv [dans des emseble]    
@@ -144,8 +167,6 @@ def propagation(individu_1):
             if M[i,j] == True:
                 L_connecte.append(i,j)
                 print(L_connecte)
-        
-                    
         
 
 
