@@ -35,4 +35,15 @@ infecté**
 - créer un dict avec ( serveurs : Google , jeux ...   ) 
 - associer la connexion ( ensemble ) à la population
 
-#### Objectifs mercredi 21 Mars 2018 : Relier les serveurs entre eux
+## Mercredi 21 Mars 2018 
+
+2 groupes de travail:
+
+**Constitution des liaisons "edges" entre Utilisateurs et Serveurs ( dans le cas des Serveurs Locaux ) à partir de la base de donnée des utilisateurs, mise en place de la visualisation de la propagation de l'infection en établissant un code couleur sur les noeuds :**
+- beige : sain
+- rouge : infecté
+
+**Reprise du programme sur les serveurs locaux : un utilisateur ne peut être connecté qu'à un seul serveur local
+Continuer à créer le réseau ( serveur global notament ) 
+Recherche documentaire **
+
