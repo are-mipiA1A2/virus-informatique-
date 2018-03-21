@@ -44,6 +44,6 @@ infecté**
 - rouge : infecté
 
 **Reprise du programme sur les serveurs locaux : un utilisateur ne peut être connecté qu'à un seul serveur local
-Fin du réseau  ( serveur global notament ), début du programme propagation
+Fin du réseau  ( serveur global notament ), début du programme propagation,
 Recherche documentaire**
 
