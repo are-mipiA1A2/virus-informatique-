@@ -28,11 +28,13 @@ virus = (0.5, 0.0, 0.0, 0.0)
 #global internet
 #internet = type_serv()
 
-
+#SG : serveurs globaux : dict[str : list[set(int), set(str)]]
 SG = {"Google" : [set(), set()],
       "Jeux" : [set(), set()],
       "CIA" : [set(), set()],
       }
+
+SG_adresses = ["Google", "Jeux", "CIA"]
 
 
 
@@ -46,12 +48,12 @@ def population():
         protection = rd.uniform(0.0, 1.0)
     #Plus le taux de protection est haut moins le temps de desinfection est eleve.
         Tdesinfection = 1.0 - protection
-        serveurs_locaux = set()
+        serveurs_locaux = ""
         serveurs_globaux = set()
         pop[i] = [infection, protection, Tdesinfection, serveurs_locaux, serveurs_globaux]
     return pop
 
-#POPU : population totale : dict[int : list[bool, float, float, set[str], set[int]
+#POPU : population totale : dict[int : list[bool, float, float, str, set[int]
 global POPU
 POPU = population()
 #POPU_adresses : liste des adresses de POPU : list[int]
@@ -72,20 +74,36 @@ def s_locaux():
     Attribue un ensemble de personnes connectées au serveur à chaque serveur local
     Nonetype -> dict[str:set[int]]
     """
-    #Dss : dictionaire des serveurs locaux : dict[str:int]
+    #DR : dictionaire des serveurs locaux : dict[str:list[set(int), set(str)]
     DR = dict()
     for i in range(1, NS+1):
         #Ea : ensemble d'adresses de personnes connectées au serveur : list[int]
         Ea = set()
+        #Esg : ensemble d'adresses de serveurs globaux connectés au serveur : list[str]
+        Esg = set()
         #n : nombre de personnes connectées au serveur : int
         n = rd.randint(2, N/10)
         while n > 0:
+            flag = False
+            while not flag :
+                p = rd.choice(POPU_adresses)
+                if len(POPU[p][3]) == 0:
+                    flag = True
             p = rd.choice(POPU_adresses)
             Ea.add(p)
-            POPU[p][3].add("s"+ str(i))
+            POPU[p][3] = "s"+ str(i)
             n -= 1
-        DR["s"+str(i)] = Ea
-#!!!relier aussi des serv globaux au serv locaux
+        
+        #m : nombre de serveurs globaux connectés au serveur : int
+        m = rd.randint(1,3)
+        while m > 0:
+            sg = rd.choice(SG_adresses)
+            Esg.add(sg)
+            SG[sg][1].add("s"+ str(i))
+            m -= 1
+        DR["s"+str(i)] = [Ea, Esg]
+#!!!relier aussi des serv globaux aux serv locaux
+        
     return DR
 
 
