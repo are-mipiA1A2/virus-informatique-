@@ -39,11 +39,11 @@ infecté**
 
 2 groupes de travail:
 
-**Constitution des liaisons "edges" entre Utilisateurs et Serveurs ( dans le cas des Serveurs Locaux ) à partir de la base de donnée des utilisateurs, mise en place de la visualisation de la propagation de l'infection en établissant un code couleur sur les noeuds :**
+**Constitution des liaisons "edges" entre Utilisateurs et Serveurs  à partir de la base de donnée des utilisateurs et mise en forme visuelle, mise en place de la visualisation de la propagation de l'infection en établissant un code couleur sur les noeuds :**
 - beige : sain
 - rouge : infecté
 
 **Reprise du programme sur les serveurs locaux : un utilisateur ne peut être connecté qu'à un seul serveur local
-Continuer à créer le réseau ( serveur global notament ), 
+Fin du réseau  ( serveur global notament ), début du programme propagation
 Recherche documentaire**
 
