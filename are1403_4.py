@@ -87,11 +87,11 @@ def s_locaux():
             flag = False
             while not flag :
                 p = rd.choice(POPU_adresses)
-                if len(POPU[p][3]) == 0:
+                if POPU[p][3] == "":
                     flag = True
-            p = rd.choice(POPU_adresses)
-            Ea.add(p)
-            POPU[p][3] = "s"+ str(i)
+                    Ea.add(p)
+                    POPU[p][3] = "s"+ str(i)
+                    
             n -= 1
         
         #m : nombre de serveurs globaux connectés au serveur : int
@@ -102,6 +102,8 @@ def s_locaux():
             SG[sg][1].add("s"+ str(i))
             m -= 1
         DR["s"+str(i)] = [Ea, Esg]
+        Ea = set()
+        Esg = set()
 #!!!relier aussi des serv globaux aux serv locaux
         
     return DR
@@ -124,7 +126,9 @@ def s_globaux():
             p = rd.choice(POPU_adresses)
             Ea.add(p)
             POPU[p]
+            
             n -= 1
+            
 #!!!relier aussi les pop qu'on vient d'ajouter
         SG[sg][0] = Ea
 #!!! finir de relier des trucs (pop et serv locaux aux serv globaux)
@@ -213,8 +217,8 @@ def contamination(individu_1, individu_2):
 
 
 
-def propagation(individu_1):
-    """Simule la propagation intentionnelle du virus à partir d'un individu infecté"""
+"""def propagation(individu_1):
+    Simule la propagation intentionnelle du virus à partir d'un individu infecté
     #L_connecte : liste des individus connectés à individu_1 selon M : list[tuple(int, int)]
     L_connecte = []
     for i in range(N):
@@ -223,4 +227,4 @@ def propagation(individu_1):
                 next
             if M[i,j] == True:
                 L_connecte.append(i,j)
-                print(L_connecte)
+                print(L_connecte)"""
