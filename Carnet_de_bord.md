@@ -49,8 +49,4 @@ Recherche documentaire**
 
 ## Mercredi 28 Mars 2018
 
-2 tableaux :
 
-nom       type      intervalle      valeur     initiale      fixe
-_________________________________________________________________
-Infectiosité
