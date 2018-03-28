@@ -48,5 +48,10 @@ Fin du réseau  ( serveur global notament ), début du programme propagation,
 Recherche documentaire**
 
 ## Mercredi 28 Mars 2018
+Indicateurs : N = [5,10]
+un point = moyenne sur N simulations 
+
+faire un graphique
+nombres infectés en fonction : paramètre
 
 
