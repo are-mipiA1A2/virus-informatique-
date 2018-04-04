@@ -54,4 +54,10 @@ un point = moyenne sur N simulations
 faire un graphique
 nombres infectés en fonction : paramètre
 
+## Mercredi 4 Avril
+
+Faire une fonction qui concerne les réseaux locaux 
+Faire une fonction qui créer les serveurs Globaux
+
+modéliser les gens atteint et non infectés
 
