@@ -22,7 +22,7 @@ global NSL
 NSL = 5
 #virus:
 global virus
-virus = (0.8, 0.0, 0.0, "vers")
+virus = (0.8,"vers")
 #internet : ensemble des réseaux (locaux et globaux) : dict[str:list[set[int], str, bool]]
 #global internet
 #internet = type_serv()
@@ -220,7 +220,7 @@ I_infectes = {"Internet1" : 1}
 def edd_vers_antivirus(i1,i2):
     """Simule l'échange de donnée d'un individu 1 à un individu 2 dans un réseau 'reseau'"""
 #!!! rechercher si un antivirus peut enregistrer un virus même si l'ordi devient pas infecté
-    infectiosité,_,_,type = virus
+    infectiosité, type = virus
     if I[i2][0] == True:
         return None 
     if I[i1][0]:
@@ -232,10 +232,11 @@ def edd_vers_antivirus(i1,i2):
         if infectiosité > I[i2][2]:
             I[i2][0] = True
             I_infectes[i2] = int(I[i2][3]*10)
-            if I[i2][6] == "sl":
+            if I[i2][-1] == "sl":
                 for e in I_connections[i2]:
-                    I[e][0] = True
-                    I_infectes[e] = int(I[e][3]*10)
+                    if I[e][-1] == 'i':
+                        I[e][0] = True
+                        I_infectes[e] = int(I[e][3]*10)
     return None    
            
 def p2p():
@@ -255,15 +256,13 @@ def p2p():
     
 def journee_ponderee_antivirus(E_del):
 #échanges de donnée classiques
-    for j in range(50):
+    for j in range(100):
         i1 = rd.choice(I_adresses_ponderees)
         if len(I_connections[i1]) != 0:
             i2 = rd.choice(I_connections[i1])
             edd_vers_antivirus(i1,i2)
-        else:
-            next
 #peer to peer
-    for k in range(50):
+    for k in range(0):
         p2p()
 #rôle de l'antivirus
 
@@ -366,7 +365,7 @@ def Test(T, E_del):
     liaison(T)
     return affichage(T, E_del)
 
-f = plt.figure(1)
+"""f = plt.figure(1)
 im=plt.imshow(Test(G,E_del), animated = True)
 import matplotlib.animation as animation
 
@@ -374,7 +373,7 @@ def update():
     im.set_array(journee_ponderee_antivirus(E_del))
     return im,
 
-ani = animation.FuncAnimation(f, update, frames=20, interval=50, blit = True)
+ani = animation.FuncAnimation(f, update, frames=20, interval=50, blit = True)"""
 
 
    
